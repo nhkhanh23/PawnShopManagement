@@ -1,0 +1,37 @@
+@using System.Globalization
+@{ var section=ViewContext.RouteData.Values["controller"]?.ToString(); var en=CultureInfo.CurrentUICulture.Name=="en-US"; }
+<!DOCTYPE html>
+<html lang="@(en?"en":"vi")">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>@ViewData["Title"] · PawnFlow</title>
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+</head>
+<body>
+<a class="skip-link" href="#main">@T("Đến nội dung chính")</a>
+<aside class="sidebar">
+ <a class="brand" asp-controller="Contracts" asp-action="Index"><span class="brand-icon">P</span><span>PawnFlow<small>@T("QUẢN LÝ CẦM ĐỒ")</small></span></a>
+ <div class="nav-label">@(en?"WORKSPACE":T("KHÔNG GIAN LÀM VIỆC"))</div>
+ <nav aria-label="@T("Điều hướng chính")">
+ <a class="nav-item @(section=="Contracts"?"active":"")" asp-controller="Contracts" asp-action="Index"><span>▤</span> @(en?"Contracts":T("Hợp đồng cầm đồ"))</a>
+ <a class="nav-item @(section=="Customers"?"active":"")" asp-controller="Customers" asp-action="Index"><span>♧</span> @(en?"Customers":T("Khách hàng"))</a>
+ @if(User.IsInRole("Admin")) { <a class="nav-item" asp-controller="Account" asp-action="CreateStaff"><span>＋</span> @(en?"Add staff":T("Thêm nhân viên"))</a> }
+ <a class="nav-item" asp-controller="Home" asp-action="Privacy"><span>◇</span> @(en?"Privacy":T("Bảo mật dữ liệu"))</a>
+ </nav>
+ <div class="sidebar-note"><span class="live-dot"></span> @T("Vận hành đơn giản hơn")<p>@T("Theo dõi khách hàng và hợp đồng trong một không gian.")</p></div>
+ <div class="sidebar-bottom">PAWNFLOW <span>v1.0</span></div>
+</aside>
+<div class="workspace">
+ <header class="topbar"><div><span class="breadcrumb-label">@(en?"Workspace":T("Không gian quản lý"))</span><span class="separator">/</span><strong>@ViewData["Title"]</strong></div>
+ <div class="top-actions"><form asp-controller="Home" asp-action="Language" method="post"><input type="hidden" name="returnUrl" value="@Context.Request.Path@Context.Request.QueryString"/><label class="visually-hidden" for="culture">@T("Ngôn ngữ")</label><select id="culture" name="culture" class="language-select"><option value="vi-VN" selected="@(!en)">Tiếng Việt</option><option value="en-US" selected="@en">English</option></select><button class="language-button" type="submit">OK</button></form>
+ @if(User.Identity?.IsAuthenticated==true) { <div class="user-avatar">@User.Identity.Name?.Substring(0,1).ToUpper()</div><div class="user-info"><strong>@User.Identity.Name</strong><small>@(User.IsInRole("Admin")?T("Quản trị viên"):T("Nhân viên"))</small></div><form asp-controller="Account" asp-action="Logout" method="post"><button class="logout" title="@T("Đăng xuất")">↪</button></form> }
+ </div></header>
+ <main id="main" class="content">
+ @if(TempData["Success"] is string success) { <div class="notice success" role="status">✓ @success</div> }
+ @if(TempData["Error"] is string error) { <div class="notice error" role="alert">@error</div> }
+ @RenderBody()
+ </main><footer class="app-footer"><span>© @DateTime.Now.Year PawnFlow</span><span>@T("Quản lý rõ ràng. Vận hành hiệu quả.")</span></footer>
+</div>
+<script src="~/lib/jquery/dist/jquery.min.js"></script><script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script><script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts",required:false)
+</body></html>

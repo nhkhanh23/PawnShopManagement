@@ -1,0 +1,28 @@
+@model ContractListModel
+<div class="deadline-overview" aria-label="@T("Cảnh báo hạn")">
+<a class="deadline-count overdue" asp-action="Index" asp-route-deadlineFilter="Overdue">@T("Quá hạn"): <strong>@Model.Overdue</strong></a>
+<a class="deadline-count today" asp-action="Index" asp-route-deadlineFilter="DueToday">@T("Đến hạn hôm nay"): <strong>@Model.DueToday</strong></a>
+<a class="deadline-count soon" asp-action="Index" asp-route-deadlineFilter="DueSoon">@T("Sắp đến hạn"): <strong>@Model.DueSoon</strong></a>
+<small>@T("Chỉ cảnh báo hợp đồng đang cầm; sắp đến hạn trong 3 ngày tới.")</small>
+</div>
+<div class="table-responsive"><table class="data-table"><thead><tr><th>@T("Hợp đồng / tài sản")</th><th>@T("Khách hàng")</th><th class="text-end">@T("Số tiền vay")</th><th>@T("Lãi / tháng")</th><th>@T("Ngày cầm")</th><th>@T("Thời hạn / đến hạn")</th><th>@T("Trạng thái")</th><th class="text-end">@T("Thao tác")</th></tr></thead><tbody>
+@foreach(var item in Model.Items) {
+ var deadlineState=item.GetDeadlineState(Model.Today);
+ var remaining=item.DueDate.HasValue?(item.DueDate.Value-Model.Today).Days:0;
+ <tr><td><a class="contract-id" asp-action="Edit" asp-route-id="@item.ContractID">HĐ-@item.ContractID.ToString("D5")</a><div class="asset-name">@item.AssetName</div></td><td><div class="customer-cell"><span class="mini-avatar">@item.Customer.FullName.FirstOrDefault()</span><span>@item.Customer.FullName<small>@item.Customer.Phone</small></span></div></td><td class="money text-end">@item.LoanAmount.ToString("N0") <small>đ</small></td><td>@item.InterestRate.ToString("0.##")%</td><td>@item.StartDate.ToString("dd/MM/yyyy")</td><td class="deadline-cell">
+@if(item.DueDate is DateTime due) { <strong>@due.ToString("dd/MM/yyyy")</strong><small>@T("Số ngày cầm", item.TermDays!.Value)</small> }
+else { <small>@T("Chưa nhập thời hạn")</small> }
+@if(deadlineState=="Overdue") { <span class="deadline-badge overdue">@T("Quá hạn số ngày", -remaining)</span> }
+else if(deadlineState=="DueToday") { <span class="deadline-badge today">@T("Đến hạn hôm nay")</span> }
+else if(deadlineState=="DueSoon") { <span class="deadline-badge soon">@T("Còn số ngày", remaining)</span> }
+else if(deadlineState=="OnTime") { <small>@T("Còn số ngày", remaining)</small> }
+else if(deadlineState=="Unknown") { <small>@T("Cần bổ sung thời hạn để cảnh báo.")</small> }
+</td><td><span class="status @(item.Status=="DangCam"?"pending":item.Status=="DaChuoc"?"done":"closed")"><span>●</span> @(item.Status=="DangCam"?T("Đang cầm"):item.Status=="DaChuoc"?T("Đã chuộc"):T("Đã thanh lý"))</span></td><td><div class="row-actions"><a asp-action="Edit" asp-route-id="@item.ContractID" class="btn-edit">@T("Sửa")</a>@if(User.IsInRole("Admin")) { <form asp-action="Delete" asp-route-id="@item.ContractID" method="post" data-confirm="@T("Xóa hợp đồng này? Thao tác này không thể hoàn tác.")"><button class="btn-delete" type="submit">@T("Xóa")</button></form> }</div></td></tr>
+}
+@if(Model.Items.Count==0) { <tr><td colspan="8"><div class="empty-state"><span>▤</span><h3>@T("Chưa có hợp đồng phù hợp")</h3><p>@T("Thử thay đổi bộ lọc hoặc tạo hợp đồng đầu tiên.")</p><a asp-action="Create" class="btn btn-primary">@T("＋ Tạo hợp đồng")</a></div></td></tr> }
+</tbody></table></div>
+<div class="table-footer"><span>@T("Kết quả và trang", Model.Total, Model.Page, Model.Pages)</span><nav aria-label="@T("Phân trang")" class="pagination-controls">
+@if(Model.Page>1) { <a asp-action="Index" asp-route-searchString="@Model.Search" asp-route-statusFilter="@Model.Status" asp-route-deadlineFilter="@Model.Deadline" asp-route-page="@(Model.Page-1)" data-page>@T("← Trước")</a> }
+<span class="page-current">@Model.Page</span>
+@if(Model.Page<Model.Pages) { <a asp-action="Index" asp-route-searchString="@Model.Search" asp-route-statusFilter="@Model.Status" asp-route-deadlineFilter="@Model.Deadline" asp-route-page="@(Model.Page+1)" data-page>@T("Sau →")</a> }
+</nav></div>

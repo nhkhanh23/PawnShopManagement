@@ -1,0 +1,555 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+  <data name="10 / trang" xml:space="preserve">
+    <value>10 / trang</value>
+  </data>
+  <data name="Bạn chưa có quyền thực hiện thao tác này" xml:space="preserve">
+    <value>Bạn chưa có quyền thực hiện thao tác này</value>
+  </data>
+  <data name="Bảo mật dữ liệu" xml:space="preserve">
+    <value>Bảo mật dữ liệu</value>
+  </data>
+  <data name="Bảo vệ thông tin khách hàng" xml:space="preserve">
+    <value>Bảo vệ thông tin khách hàng</value>
+  </data>
+  <data name="CCCD / CMND" xml:space="preserve">
+    <value>CCCD / CMND</value>
+  </data>
+  <data name="CCCD đã được đăng ký." xml:space="preserve">
+    <value>CCCD đã được đăng ký.</value>
+  </data>
+  <data name="CCCD/CMND gồm 9 hoặc 12 chữ số" xml:space="preserve">
+    <value>CCCD/CMND gồm 9 hoặc 12 chữ số</value>
+  </data>
+  <data name="CHÀO MỪNG ĐẾN PAWNFLOW" xml:space="preserve">
+    <value>CHÀO MỪNG ĐẾN PAWNFLOW</value>
+  </data>
+  <data name="Chưa có hợp đồng phù hợp" xml:space="preserve">
+    <value>Chưa có hợp đồng phù hợp</value>
+  </data>
+  <data name="Chưa có khách hàng phù hợp" xml:space="preserve">
+    <value>Chưa có khách hàng phù hợp</value>
+  </data>
+  <data name="Chưa có khách hàng?" xml:space="preserve">
+    <value>Chưa có khách hàng?</value>
+  </data>
+  <data name="Chỉnh sửa hợp đồng" xml:space="preserve">
+    <value>Chỉnh sửa hợp đồng</value>
+  </data>
+  <data name="Chỉnh sửa khách hàng" xml:space="preserve">
+    <value>Chỉnh sửa khách hàng</value>
+  </data>
+  <data name="Chọn khách hàng" xml:space="preserve">
+    <value>Chọn khách hàng</value>
+  </data>
+  <data name="Cookie &amp; phiên làm việc" xml:space="preserve">
+    <value>Cookie &amp; phiên làm việc</value>
+  </data>
+  <data name="Cookie xác thực dùng để đăng nhập. Cookie phiên lưu trạng thái tìm kiếm và số lần đăng nhập sai; phiên hết hạn sau 30 phút không hoạt động. Lựa chọn ngôn ngữ được ghi nhớ trong cookie tối đa một năm." xml:space="preserve">
+    <value>Cookie xác thực dùng để đăng nhập. Cookie phiên lưu trạng thái tìm kiếm và số lần đăng nhập sai; phiên hết hạn sau 30 phút không hoạt động. Lựa chọn ngôn ngữ được ghi nhớ trong cookie tối đa một năm.</value>
+  </data>
+  <data name="Có lỗi xảy ra" xml:space="preserve">
+    <value>Có lỗi xảy ra</value>
+  </data>
+  <data name="Danh bạ khách hàng" xml:space="preserve">
+    <value>Danh bạ khách hàng</value>
+  </data>
+  <data name="Danh sách hợp đồng" xml:space="preserve">
+    <value>Danh sách hợp đồng</value>
+  </data>
+  <data name="Dư nợ đang cầm" xml:space="preserve">
+    <value>Dư nợ đang cầm</value>
+  </data>
+  <data name="Ghi nhớ đăng nhập" xml:space="preserve">
+    <value>Ghi nhớ đăng nhập</value>
+  </data>
+  <data name="Ghi đầy đủ đặc điểm nhận dạng và tình trạng tài sản để thuận tiện khi đối chiếu." xml:space="preserve">
+    <value>Ghi đầy đủ đặc điểm nhận dạng và tình trạng tài sản để thuận tiện khi đối chiếu.</value>
+  </data>
+  <data name="Gọn việc quản lý." xml:space="preserve">
+    <value>Gọn việc quản lý.</value>
+  </data>
+  <data name="Hãy thử lại hoặc kiểm tra kết nối cơ sở dữ liệu." xml:space="preserve">
+    <value>Hãy thử lại hoặc kiểm tra kết nối cơ sở dữ liệu.</value>
+  </data>
+  <data name="Hệ thống lưu tên, giấy tờ định danh, địa chỉ, điện thoại và thông tin cầm cố phục vụ vận hành cửa hàng. Quản trị viên cần quản lý thời hạn lưu trữ, sao lưu và yêu cầu xóa dữ liệu." xml:space="preserve">
+    <value>Hệ thống lưu tên, giấy tờ định danh, địa chỉ, điện thoại và thông tin cầm cố phục vụ vận hành cửa hàng. Quản trị viên cần quản lý thời hạn lưu trữ, sao lưu và yêu cầu xóa dữ liệu.</value>
+  </data>
+  <data name="Họ và tên" xml:space="preserve">
+    <value>Họ và tên</value>
+  </data>
+  <data name="HỒ SƠ KHÁCH HÀNG" xml:space="preserve">
+    <value>HỒ SƠ KHÁCH HÀNG</value>
+  </data>
+  <data name="Hợp đồng / tài sản" xml:space="preserve">
+    <value>Hợp đồng / tài sản</value>
+  </data>
+  <data name="Hợp đồng cầm đồ" xml:space="preserve">
+    <value>Hợp đồng cầm đồ</value>
+  </data>
+  <data name="Hợp đồng đang cầm" xml:space="preserve">
+    <value>Hợp đồng đang cầm</value>
+  </data>
+  <data name="Hợp đồng đã chuộc" xml:space="preserve">
+    <value>Hợp đồng đã chuộc</value>
+  </data>
+  <data name="Hủy bỏ" xml:space="preserve">
+    <value>Hủy bỏ</value>
+  </data>
+  <data name="KHÔNG GIAN LÀM VIỆC" xml:space="preserve">
+    <value>KHÔNG GIAN LÀM VIỆC</value>
+  </data>
+  <data name="Khách hàng" xml:space="preserve">
+    <value>Khách hàng</value>
+  </data>
+  <data name="Khách hàng &amp; tài sản" xml:space="preserve">
+    <value>Khách hàng &amp; tài sản</value>
+  </data>
+  <data name="Khách hàng không tồn tại." xml:space="preserve">
+    <value>Khách hàng không tồn tại.</value>
+  </data>
+  <data name="Khách hàng đã nhận lại tài sản" xml:space="preserve">
+    <value>Khách hàng đã nhận lại tài sản</value>
+  </data>
+  <data name="Không có quyền truy cập" xml:space="preserve">
+    <value>Không có quyền truy cập</value>
+  </data>
+  <data name="Không gian quản lý" xml:space="preserve">
+    <value>Không gian quản lý</value>
+  </data>
+  <data name="Không gian vận hành" xml:space="preserve">
+    <value>Không gian vận hành</value>
+  </data>
+  <data name="Không thể xóa khách hàng đang có hợp đồng." xml:space="preserve">
+    <value>Không thể xóa khách hàng đang có hợp đồng.</value>
+  </data>
+  <data name="Không thể xử lý yêu cầu" xml:space="preserve">
+    <value>Không thể xử lý yêu cầu</value>
+  </data>
+  <data name="Kiểm tra thông tin khách hàng và tài sản trước khi lưu." xml:space="preserve">
+    <value>Kiểm tra thông tin khách hàng và tài sản trước khi lưu.</value>
+  </data>
+  <data name="KẾT NỐI &amp; CHĂM SÓC" xml:space="preserve">
+    <value>KẾT NỐI &amp; CHĂM SÓC</value>
+  </data>
+  <data name="Kết quả và trang" xml:space="preserve">
+    <value>{0} kết quả · Trang {1} / {2}</value>
+  </data>
+  <data name="Liên hệ quản trị viên để được hỗ trợ." xml:space="preserve">
+    <value>Liên hệ quản trị viên để được hỗ trợ.</value>
+  </data>
+  <data name="Lãi / tháng" xml:space="preserve">
+    <value>Lãi / tháng</value>
+  </data>
+  <data name="Lãi suất (%/tháng)" xml:space="preserve">
+    <value>Lãi suất (%/tháng)</value>
+  </data>
+  <data name="Lãi suất phải từ 0 đến 100%" xml:space="preserve">
+    <value>Lãi suất phải từ 0 đến 100%</value>
+  </data>
+  <data name="Lần đầu cài đặt?" xml:space="preserve">
+    <value>Lần đầu cài đặt?</value>
+  </data>
+  <data name="Lọc kết quả" xml:space="preserve">
+    <value>Lọc kết quả</value>
+  </data>
+  <data name="Mã tra cứu" xml:space="preserve">
+    <value>Mã tra cứu</value>
+  </data>
+  <data name="Mô tả tài sản" xml:space="preserve">
+    <value>Mô tả tài sản</value>
+  </data>
+  <data name="Mật khẩu" xml:space="preserve">
+    <value>Mật khẩu</value>
+  </data>
+  <data name="Mật khẩu từ 10 đến 128 ký tự" xml:space="preserve">
+    <value>Mật khẩu từ 10 đến 128 ký tự</value>
+  </data>
+  <data name="Mọi hợp đồng, tài sản và khách hàng" xml:space="preserve">
+    <value>Mọi hợp đồng, tài sản và khách hàng</value>
+  </data>
+  <data name="Ngày cầm" xml:space="preserve">
+    <value>Ngày cầm</value>
+  </data>
+  <data name="Ngày cầm không hợp lệ." xml:space="preserve">
+    <value>Ngày cầm không hợp lệ.</value>
+  </data>
+  <data name="Ngày cầm phải từ năm 2000 đến hôm nay." xml:space="preserve">
+    <value>Ngày cầm phải từ năm 2000 đến hôm nay.</value>
+  </data>
+  <data name="Ngôn ngữ" xml:space="preserve">
+    <value>Ngôn ngữ</value>
+  </data>
+  <data name="Nhân viên" xml:space="preserve">
+    <value>Nhân viên</value>
+  </data>
+  <data name="Nhân viên được quản lý khách hàng và hợp đồng." xml:space="preserve">
+    <value>Nhân viên được quản lý khách hàng và hợp đồng.</value>
+  </data>
+  <data name="Nhân viên được xem, tạo và sửa hồ sơ. Quản trị viên có thêm quyền xóa dữ liệu và tạo tài khoản nhân viên. Không chia sẻ tài khoản giữa nhiều người." xml:space="preserve">
+    <value>Nhân viên được xem, tạo và sửa hồ sơ. Quản trị viên có thêm quyền xóa dữ liệu và tạo tài khoản nhân viên. Không chia sẻ tài khoản giữa nhiều người.</value>
+  </data>
+  <data name="Phân trang" xml:space="preserve">
+    <value>Phân trang</value>
+  </data>
+  <data name="QUYỀN RIÊNG TƯ" xml:space="preserve">
+    <value>QUYỀN RIÊNG TƯ</value>
+  </data>
+  <data name="QUẢN LÝ CẦM ĐỒ" xml:space="preserve">
+    <value>QUẢN LÝ CẦM ĐỒ</value>
+  </data>
+  <data name="Quyền truy cập" xml:space="preserve">
+    <value>Quyền truy cập</value>
+  </data>
+  <data name="Quản lý hợp đồng" xml:space="preserve">
+    <value>Quản lý hợp đồng</value>
+  </data>
+  <data name="Quản lý rõ ràng. Vận hành hiệu quả." xml:space="preserve">
+    <value>Quản lý rõ ràng. Vận hành hiệu quả.</value>
+  </data>
+  <data name="Quản lý thông tin liên hệ và hồ sơ khách hàng." xml:space="preserve">
+    <value>Quản lý thông tin liên hệ và hồ sơ khách hàng.</value>
+  </data>
+  <data name="Quản trị viên" xml:space="preserve">
+    <value>Quản trị viên</value>
+  </data>
+  <data name="Rõ ràng từ từng giao dịch" xml:space="preserve">
+    <value>Rõ ràng từ từng giao dịch</value>
+  </data>
+  <data name="Sau →" xml:space="preserve">
+    <value>Sau →</value>
+  </data>
+  <data name="Số khách hàng" xml:space="preserve">
+    <value>{0} khách hàng</value>
+  </data>
+  <data name="Số tiền vay" xml:space="preserve">
+    <value>Số tiền vay</value>
+  </data>
+  <data name="Số tiền vay (VNĐ)" xml:space="preserve">
+    <value>Số tiền vay (VNĐ)</value>
+  </data>
+  <data name="Số tiền vay từ 500.000 đến 1.000.000.000 đồng" xml:space="preserve">
+    <value>Số tiền vay từ 500.000 đến 1.000.000.000 đồng</value>
+  </data>
+  <data name="Số tiền vay × lãi suất / 100. Chỉ là ước tính, chưa bao gồm phí hoặc điều chỉnh theo thỏa thuận." xml:space="preserve">
+    <value>Số tiền vay × lãi suất / 100. Chỉ là ước tính, chưa bao gồm phí hoặc điều chỉnh theo thỏa thuận.</value>
+  </data>
+  <data name="Số điện thoại" xml:space="preserve">
+    <value>Số điện thoại</value>
+  </data>
+  <data name="Số điện thoại gồm 10 chữ số, bắt đầu bằng 0" xml:space="preserve">
+    <value>Số điện thoại gồm 10 chữ số, bắt đầu bằng 0</value>
+  </data>
+  <data name="Sử dụng tài khoản được quản trị viên cấp." xml:space="preserve">
+    <value>Sử dụng tài khoản được quản trị viên cấp.</value>
+  </data>
+  <data name="Sửa" xml:space="preserve">
+    <value>Sửa</value>
+  </data>
+  <data name="TIỀN LÃI DỰ KIẾN / THÁNG" xml:space="preserve">
+    <value>TIỀN LÃI DỰ KIẾN / THÁNG</value>
+  </data>
+  <data name="Thao tác" xml:space="preserve">
+    <value>Thao tác</value>
+  </data>
+  <data name="The field {0} must be a string with a maximum length of {1}." xml:space="preserve">
+    <value>{0} tối đa {1} ký tự.</value>
+  </data>
+  <data name="The {0} field is required." xml:space="preserve">
+    <value>Vui lòng nhập {0}.</value>
+  </data>
+  <data name="Theo dõi khách hàng và hợp đồng trong một không gian." xml:space="preserve">
+    <value>Theo dõi khách hàng và hợp đồng trong một không gian.</value>
+  </data>
+  <data name="Theo dõi tài sản, khoản vay và trạng thái hợp đồng của bạn." xml:space="preserve">
+    <value>Theo dõi tài sản, khoản vay và trạng thái hợp đồng của bạn.</value>
+  </data>
+  <data name="Thiết lập hệ thống" xml:space="preserve">
+    <value>Thiết lập hệ thống</value>
+  </data>
+  <data name="Thiết lập quản trị viên" xml:space="preserve">
+    <value>Thiết lập quản trị viên</value>
+  </data>
+  <data name="Thêm khách hàng" xml:space="preserve">
+    <value>Thêm khách hàng</value>
+  </data>
+  <data name="Thêm khách hàng để bắt đầu lập hợp đồng." xml:space="preserve">
+    <value>Thêm khách hàng để bắt đầu lập hợp đồng.</value>
+  </data>
+  <data name="Thêm nhân viên" xml:space="preserve">
+    <value>Thêm nhân viên</value>
+  </data>
+  <data name="Thông tin khoản vay" xml:space="preserve">
+    <value>Thông tin khoản vay</value>
+  </data>
+  <data name="Thông tin khách hàng được dùng để đối chiếu hợp đồng." xml:space="preserve">
+    <value>Thông tin khách hàng được dùng để đối chiếu hợp đồng.</value>
+  </data>
+  <data name="Thông tin rõ ràng," xml:space="preserve">
+    <value>Thông tin rõ ràng,</value>
+  </data>
+  <data name="Thông tin được lưu" xml:space="preserve">
+    <value>Thông tin được lưu</value>
+  </data>
+  <data name="Thử lại sau 5 phút." xml:space="preserve">
+    <value>Thử lại sau 5 phút.</value>
+  </data>
+  <data name="Thử thay đổi bộ lọc hoặc tạo hợp đồng đầu tiên." xml:space="preserve">
+    <value>Thử thay đổi bộ lọc hoặc tạo hợp đồng đầu tiên.</value>
+  </data>
+  <data name="Trang hiện tại" xml:space="preserve">
+    <value>Trang {0} / {1}</value>
+  </data>
+  <data name="Truy cập đúng vai trò, sử dụng đúng mục đích." xml:space="preserve">
+    <value>Truy cập đúng vai trò, sử dụng đúng mục đích.</value>
+  </data>
+  <data name="Trạng thái" xml:space="preserve">
+    <value>Trạng thái</value>
+  </data>
+  <data name="Trạng thái không hợp lệ" xml:space="preserve">
+    <value>Trạng thái không hợp lệ</value>
+  </data>
+  <data name="Trọn sự an tâm." xml:space="preserve">
+    <value>Trọn sự an tâm.</value>
+  </data>
+  <data name="Tài khoản tạm khóa. Vui lòng thử lại sau 5 phút." xml:space="preserve">
+    <value>Tài khoản tạm khóa. Vui lòng thử lại sau 5 phút.</value>
+  </data>
+  <data name="Tên tài sản" xml:space="preserve">
+    <value>Tên tài sản</value>
+  </data>
+  <data name="Tên đăng nhập" xml:space="preserve">
+    <value>Tên đăng nhập</value>
+  </data>
+  <data name="Tên đăng nhập gồm 3–50 ký tự chữ, số, dấu chấm, gạch ngang hoặc gạch dưới" xml:space="preserve">
+    <value>Tên đăng nhập gồm 3–50 ký tự chữ, số, dấu chấm, gạch ngang hoặc gạch dưới</value>
+  </data>
+  <data name="Tên đăng nhập hoặc mật khẩu không đúng." xml:space="preserve">
+    <value>Tên đăng nhập hoặc mật khẩu không đúng.</value>
+  </data>
+  <data name="Tên đăng nhập đã tồn tại." xml:space="preserve">
+    <value>Tên đăng nhập đã tồn tại.</value>
+  </data>
+  <data name="Tìm hợp đồng" xml:space="preserve">
+    <value>Tìm hợp đồng</value>
+  </data>
+  <data name="Tìm khách hàng" xml:space="preserve">
+    <value>Tìm khách hàng</value>
+  </data>
+  <data name="Tìm kiếm" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="Tìm kiếm và quản lý thông tin giao dịch" xml:space="preserve">
+    <value>Tìm kiếm và quản lý thông tin giao dịch</value>
+  </data>
+  <data name="Tìm tên khách hàng, tài sản…" xml:space="preserve">
+    <value>Tìm tên khách hàng, tài sản…</value>
+  </data>
+  <data name="Tìm tên, số điện thoại, CCCD…" xml:space="preserve">
+    <value>Tìm tên, số điện thoại, CCCD…</value>
+  </data>
+  <data name="Tình trạng, biển số, số khung hoặc IMEI…" xml:space="preserve">
+    <value>Tình trạng, biển số, số khung hoặc IMEI…</value>
+  </data>
+  <data name="Tạo hợp đồng" xml:space="preserve">
+    <value>Tạo hợp đồng</value>
+  </data>
+  <data name="Tạo nhân viên" xml:space="preserve">
+    <value>Tạo nhân viên</value>
+  </data>
+  <data name="Tạo quản trị viên" xml:space="preserve">
+    <value>Tạo quản trị viên</value>
+  </data>
+  <data name="Tạo tài khoản đầu tiên cho cửa hàng của bạn." xml:space="preserve">
+    <value>Tạo tài khoản đầu tiên cho cửa hàng của bạn.</value>
+  </data>
+  <data name="Tất cả trạng thái" xml:space="preserve">
+    <value>Tất cả trạng thái</value>
+  </data>
+  <data name="TỔNG QUAN HOẠT ĐỘNG" xml:space="preserve">
+    <value>TỔNG QUAN HOẠT ĐỘNG</value>
+  </data>
+  <data name="Tổng vốn trong các hợp đồng đang cầm" xml:space="preserve">
+    <value>Tổng vốn trong các hợp đồng đang cầm</value>
+  </data>
+  <data name="Vui lòng chọn khách hàng" xml:space="preserve">
+    <value>Vui lòng chọn khách hàng</value>
+  </data>
+  <data name="Vui lòng nhập CCCD" xml:space="preserve">
+    <value>Vui lòng nhập CCCD</value>
+  </data>
+  <data name="Vui lòng nhập họ tên" xml:space="preserve">
+    <value>Vui lòng nhập họ tên</value>
+  </data>
+  <data name="Vui lòng nhập số hợp lệ." xml:space="preserve">
+    <value>Vui lòng nhập số hợp lệ.</value>
+  </data>
+  <data name="Vui lòng nhập tên tài sản" xml:space="preserve">
+    <value>Vui lòng nhập tên tài sản</value>
+  </data>
+  <data name="Ví dụ: Honda SH 125i" xml:space="preserve">
+    <value>Ví dụ: Honda SH 125i</value>
+  </data>
+  <data name="Vận hành đơn giản hơn" xml:space="preserve">
+    <value>Vận hành đơn giản hơn</value>
+  </data>
+  <data name="Về danh sách hợp đồng" xml:space="preserve">
+    <value>Về danh sách hợp đồng</value>
+  </data>
+  <data name="Về trang quản lý" xml:space="preserve">
+    <value>Về trang quản lý</value>
+  </data>
+  <data name="Xóa" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="Xóa hợp đồng này? Thao tác này không thể hoàn tác." xml:space="preserve">
+    <value>Xóa hợp đồng này? Thao tác này không thể hoàn tác.</value>
+  </data>
+  <data name="Xóa khách hàng này?" xml:space="preserve">
+    <value>Xóa khách hàng này?</value>
+  </data>
+  <data name="giao dịch an tâm." xml:space="preserve">
+    <value>giao dịch an tâm.</value>
+  </data>
+  <data name="Đang cầm" xml:space="preserve">
+    <value>Đang cầm</value>
+  </data>
+  <data name="Đang theo dõi tài sản" xml:space="preserve">
+    <value>Đang theo dõi tài sản</value>
+  </data>
+  <data name="Điều hướng chính" xml:space="preserve">
+    <value>Điều hướng chính</value>
+  </data>
+  <data name="Điện thoại" xml:space="preserve">
+    <value>Điện thoại</value>
+  </data>
+  <data name="Đã chuộc" xml:space="preserve">
+    <value>Đã chuộc</value>
+  </data>
+  <data name="Đã cập nhật hợp đồng." xml:space="preserve">
+    <value>Đã cập nhật hợp đồng.</value>
+  </data>
+  <data name="Đã cập nhật khách hàng." xml:space="preserve">
+    <value>Đã cập nhật khách hàng.</value>
+  </data>
+  <data name="Đã thanh lý" xml:space="preserve">
+    <value>Đã thanh lý</value>
+  </data>
+  <data name="Đã thêm khách hàng." xml:space="preserve">
+    <value>Đã thêm khách hàng.</value>
+  </data>
+  <data name="Đã tạo hợp đồng thành công." xml:space="preserve">
+    <value>Đã tạo hợp đồng thành công.</value>
+  </data>
+  <data name="Đã tạo quản trị viên. Hãy đăng nhập." xml:space="preserve">
+    <value>Đã tạo quản trị viên. Hãy đăng nhập.</value>
+  </data>
+  <data name="Đã tạo tài khoản nhân viên." xml:space="preserve">
+    <value>Đã tạo tài khoản nhân viên.</value>
+  </data>
+  <data name="Đã xóa hợp đồng." xml:space="preserve">
+    <value>Đã xóa hợp đồng.</value>
+  </data>
+  <data name="Đã xóa khách hàng." xml:space="preserve">
+    <value>Đã xóa khách hàng.</value>
+  </data>
+  <data name="Đăng nhập" xml:space="preserve">
+    <value>Đăng nhập</value>
+  </data>
+  <data name="Đăng xuất" xml:space="preserve">
+    <value>Đăng xuất</value>
+  </data>
+  <data name="Đặt lại" xml:space="preserve">
+    <value>Đặt lại</value>
+  </data>
+  <data name="Đến nội dung chính" xml:space="preserve">
+    <value>Đến nội dung chính</value>
+  </data>
+  <data name="Địa chỉ" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="được kết nối trong cùng một hệ thống." xml:space="preserve">
+    <value>được kết nối trong cùng một hệ thống.</value>
+  </data>
+  <data name="← Danh sách hợp đồng" xml:space="preserve">
+    <value>← Danh sách hợp đồng</value>
+  </data>
+  <data name="← Danh sách khách hàng" xml:space="preserve">
+    <value>← Danh sách khách hàng</value>
+  </data>
+  <data name="← Trước" xml:space="preserve">
+    <value>← Trước</value>
+  </data>
+  <data name="✓ Lưu hợp đồng" xml:space="preserve">
+    <value>✓ Lưu hợp đồng</value>
+  </data>
+  <data name="✓ Lưu khách hàng" xml:space="preserve">
+    <value>✓ Lưu khách hàng</value>
+  </data>
+  <data name="＋ Thêm khách hàng" xml:space="preserve">
+    <value>＋ Thêm khách hàng</value>
+  </data>
+  <data name="＋ Tạo hợp đồng" xml:space="preserve">
+    <value>＋ Tạo hợp đồng</value>
+  </data>
+  <data name="Vui lòng nhập thời hạn cầm" xml:space="preserve">
+    <value>Vui lòng nhập thời hạn cầm</value>
+  </data>
+  <data name="Thời hạn cầm phải từ 1 đến 3650 ngày" xml:space="preserve">
+    <value>Thời hạn cầm phải từ 1 đến 3650 ngày</value>
+  </data>
+  <data name="Thời hạn cầm (ngày)" xml:space="preserve">
+    <value>Thời hạn cầm (ngày)</value>
+  </data>
+  <data name="Hợp đồng mới mặc định 30 ngày; có thể thay đổi." xml:space="preserve">
+    <value>Hợp đồng mới mặc định 30 ngày; có thể thay đổi.</value>
+  </data>
+  <data name="Ngày đến hạn" xml:space="preserve">
+    <value>Ngày đến hạn</value>
+  </data>
+  <data name="Chưa xác định" xml:space="preserve">
+    <value>Chưa xác định</value>
+  </data>
+  <data name="Ngày đến hạn = ngày cầm + thời hạn. Cảnh báo trước 3 ngày." xml:space="preserve">
+    <value>Ngày đến hạn = ngày cầm + thời hạn. Cảnh báo trước 3 ngày.</value>
+  </data>
+  <data name="Hạn hợp đồng" xml:space="preserve">
+    <value>Hạn hợp đồng</value>
+  </data>
+  <data name="Tất cả hạn" xml:space="preserve">
+    <value>Tất cả hạn</value>
+  </data>
+  <data name="Quá hạn" xml:space="preserve">
+    <value>Quá hạn</value>
+  </data>
+  <data name="Đến hạn hôm nay" xml:space="preserve">
+    <value>Đến hạn hôm nay</value>
+  </data>
+  <data name="Sắp đến hạn" xml:space="preserve">
+    <value>Sắp đến hạn</value>
+  </data>
+  <data name="Cảnh báo hạn" xml:space="preserve">
+    <value>Cảnh báo hạn</value>
+  </data>
+  <data name="Chỉ cảnh báo hợp đồng đang cầm; sắp đến hạn trong 3 ngày tới." xml:space="preserve">
+    <value>Chỉ cảnh báo hợp đồng đang cầm; sắp đến hạn trong 3 ngày tới.</value>
+  </data>
+  <data name="Thời hạn / đến hạn" xml:space="preserve">
+    <value>Thời hạn / đến hạn</value>
+  </data>
+  <data name="Số ngày cầm" xml:space="preserve">
+    <value>{0} ngày</value>
+  </data>
+  <data name="Chưa nhập thời hạn" xml:space="preserve">
+    <value>Chưa nhập thời hạn</value>
+  </data>
+  <data name="Quá hạn số ngày" xml:space="preserve">
+    <value>Quá hạn {0} ngày</value>
+  </data>
+  <data name="Còn số ngày" xml:space="preserve">
+    <value>Còn {0} ngày</value>
+  </data>
+  <data name="Cần bổ sung thời hạn để cảnh báo." xml:space="preserve">
+    <value>Cần bổ sung thời hạn để cảnh báo.</value>
+  </data>
+</root>

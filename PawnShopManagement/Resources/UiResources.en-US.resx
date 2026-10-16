@@ -1,0 +1,555 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+  <data name="10 / trang" xml:space="preserve">
+    <value>10 per page</value>
+  </data>
+  <data name="Bạn chưa có quyền thực hiện thao tác này" xml:space="preserve">
+    <value>You do not have permission for this action</value>
+  </data>
+  <data name="Bảo mật dữ liệu" xml:space="preserve">
+    <value>Data privacy</value>
+  </data>
+  <data name="Bảo vệ thông tin khách hàng" xml:space="preserve">
+    <value>Protecting customer information</value>
+  </data>
+  <data name="CCCD / CMND" xml:space="preserve">
+    <value>Identity number</value>
+  </data>
+  <data name="CCCD đã được đăng ký." xml:space="preserve">
+    <value>This identity number is already registered.</value>
+  </data>
+  <data name="CCCD/CMND gồm 9 hoặc 12 chữ số" xml:space="preserve">
+    <value>The identity number must contain 9 or 12 digits</value>
+  </data>
+  <data name="CHÀO MỪNG ĐẾN PAWNFLOW" xml:space="preserve">
+    <value>WELCOME TO PAWNFLOW</value>
+  </data>
+  <data name="Chưa có hợp đồng phù hợp" xml:space="preserve">
+    <value>No matching contracts</value>
+  </data>
+  <data name="Chưa có khách hàng phù hợp" xml:space="preserve">
+    <value>No matching customers</value>
+  </data>
+  <data name="Chưa có khách hàng?" xml:space="preserve">
+    <value>New customer?</value>
+  </data>
+  <data name="Chỉnh sửa hợp đồng" xml:space="preserve">
+    <value>Edit contract</value>
+  </data>
+  <data name="Chỉnh sửa khách hàng" xml:space="preserve">
+    <value>Edit customer</value>
+  </data>
+  <data name="Chọn khách hàng" xml:space="preserve">
+    <value>Select a customer</value>
+  </data>
+  <data name="Cookie &amp; phiên làm việc" xml:space="preserve">
+    <value>Cookies and sessions</value>
+  </data>
+  <data name="Cookie xác thực dùng để đăng nhập. Cookie phiên lưu trạng thái tìm kiếm và số lần đăng nhập sai; phiên hết hạn sau 30 phút không hoạt động. Lựa chọn ngôn ngữ được ghi nhớ trong cookie tối đa một năm." xml:space="preserve">
+    <value>Authentication cookies support sign-in. Session cookies track search state and failed login attempts. Sessions expire after 30 minutes of inactivity. Language preferences are stored for up to one year.</value>
+  </data>
+  <data name="Có lỗi xảy ra" xml:space="preserve">
+    <value>An error occurred</value>
+  </data>
+  <data name="Danh bạ khách hàng" xml:space="preserve">
+    <value>Customer directory</value>
+  </data>
+  <data name="Danh sách hợp đồng" xml:space="preserve">
+    <value>All contracts</value>
+  </data>
+  <data name="Dư nợ đang cầm" xml:space="preserve">
+    <value>Outstanding principal</value>
+  </data>
+  <data name="Ghi nhớ đăng nhập" xml:space="preserve">
+    <value>Remember me</value>
+  </data>
+  <data name="Ghi đầy đủ đặc điểm nhận dạng và tình trạng tài sản để thuận tiện khi đối chiếu." xml:space="preserve">
+    <value>Record identifying features and asset condition for later verification.</value>
+  </data>
+  <data name="Gọn việc quản lý." xml:space="preserve">
+    <value>Simpler management.</value>
+  </data>
+  <data name="Hãy thử lại hoặc kiểm tra kết nối cơ sở dữ liệu." xml:space="preserve">
+    <value>Try again or check the database connection.</value>
+  </data>
+  <data name="Hệ thống lưu tên, giấy tờ định danh, địa chỉ, điện thoại và thông tin cầm cố phục vụ vận hành cửa hàng. Quản trị viên cần quản lý thời hạn lưu trữ, sao lưu và yêu cầu xóa dữ liệu." xml:space="preserve">
+    <value>The system stores names, identity numbers, addresses, phone numbers and pawn records for shop operations. Administrators manage retention, backups and deletion requests.</value>
+  </data>
+  <data name="Họ và tên" xml:space="preserve">
+    <value>Full name</value>
+  </data>
+  <data name="HỒ SƠ KHÁCH HÀNG" xml:space="preserve">
+    <value>CUSTOMER PROFILE</value>
+  </data>
+  <data name="Hợp đồng / tài sản" xml:space="preserve">
+    <value>Contract / asset</value>
+  </data>
+  <data name="Hợp đồng cầm đồ" xml:space="preserve">
+    <value>Pawn contracts</value>
+  </data>
+  <data name="Hợp đồng đang cầm" xml:space="preserve">
+    <value>Active contracts</value>
+  </data>
+  <data name="Hợp đồng đã chuộc" xml:space="preserve">
+    <value>Redeemed contracts</value>
+  </data>
+  <data name="Hủy bỏ" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="KHÔNG GIAN LÀM VIỆC" xml:space="preserve">
+    <value>WORKSPACE</value>
+  </data>
+  <data name="Khách hàng" xml:space="preserve">
+    <value>Customers</value>
+  </data>
+  <data name="Khách hàng &amp; tài sản" xml:space="preserve">
+    <value>Customer and asset</value>
+  </data>
+  <data name="Khách hàng không tồn tại." xml:space="preserve">
+    <value>Customer not found.</value>
+  </data>
+  <data name="Khách hàng đã nhận lại tài sản" xml:space="preserve">
+    <value>Assets returned to customers</value>
+  </data>
+  <data name="Không có quyền truy cập" xml:space="preserve">
+    <value>Access denied</value>
+  </data>
+  <data name="Không gian quản lý" xml:space="preserve">
+    <value>Workspace</value>
+  </data>
+  <data name="Không gian vận hành" xml:space="preserve">
+    <value>Operations workspace</value>
+  </data>
+  <data name="Không thể xóa khách hàng đang có hợp đồng." xml:space="preserve">
+    <value>A customer with existing contracts cannot be deleted.</value>
+  </data>
+  <data name="Không thể xử lý yêu cầu" xml:space="preserve">
+    <value>Unable to process the request</value>
+  </data>
+  <data name="Kiểm tra thông tin khách hàng và tài sản trước khi lưu." xml:space="preserve">
+    <value>Review customer and asset details before saving.</value>
+  </data>
+  <data name="KẾT NỐI &amp; CHĂM SÓC" xml:space="preserve">
+    <value>CUSTOMER RELATIONSHIPS</value>
+  </data>
+  <data name="Kết quả và trang" xml:space="preserve">
+    <value>{0} results · Page {1} / {2}</value>
+  </data>
+  <data name="Liên hệ quản trị viên để được hỗ trợ." xml:space="preserve">
+    <value>Contact your administrator for assistance.</value>
+  </data>
+  <data name="Lãi / tháng" xml:space="preserve">
+    <value>Monthly rate</value>
+  </data>
+  <data name="Lãi suất (%/tháng)" xml:space="preserve">
+    <value>Interest rate (% per month)</value>
+  </data>
+  <data name="Lãi suất phải từ 0 đến 100%" xml:space="preserve">
+    <value>The interest rate must be between 0 and 100%</value>
+  </data>
+  <data name="Lần đầu cài đặt?" xml:space="preserve">
+    <value>First time here?</value>
+  </data>
+  <data name="Lọc kết quả" xml:space="preserve">
+    <value>Apply filters</value>
+  </data>
+  <data name="Mã tra cứu" xml:space="preserve">
+    <value>Reference ID:</value>
+  </data>
+  <data name="Mô tả tài sản" xml:space="preserve">
+    <value>Asset description</value>
+  </data>
+  <data name="Mật khẩu" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Mật khẩu từ 10 đến 128 ký tự" xml:space="preserve">
+    <value>Use a password between 10 and 128 characters</value>
+  </data>
+  <data name="Mọi hợp đồng, tài sản và khách hàng" xml:space="preserve">
+    <value>Every contract, asset and customer</value>
+  </data>
+  <data name="Ngày cầm" xml:space="preserve">
+    <value>Pawn date</value>
+  </data>
+  <data name="Ngày cầm không hợp lệ." xml:space="preserve">
+    <value>Invalid pawn date.</value>
+  </data>
+  <data name="Ngày cầm phải từ năm 2000 đến hôm nay." xml:space="preserve">
+    <value>The pawn date must be between the year 2000 and today.</value>
+  </data>
+  <data name="Ngôn ngữ" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="Nhân viên" xml:space="preserve">
+    <value>Staff</value>
+  </data>
+  <data name="Nhân viên được quản lý khách hàng và hợp đồng." xml:space="preserve">
+    <value>Staff can manage customers and contracts.</value>
+  </data>
+  <data name="Nhân viên được xem, tạo và sửa hồ sơ. Quản trị viên có thêm quyền xóa dữ liệu và tạo tài khoản nhân viên. Không chia sẻ tài khoản giữa nhiều người." xml:space="preserve">
+    <value>Staff can view, create and edit records. Administrators can also delete data and create staff accounts. Do not share accounts.</value>
+  </data>
+  <data name="Phân trang" xml:space="preserve">
+    <value>Pagination</value>
+  </data>
+  <data name="QUYỀN RIÊNG TƯ" xml:space="preserve">
+    <value>PRIVACY</value>
+  </data>
+  <data name="QUẢN LÝ CẦM ĐỒ" xml:space="preserve">
+    <value>PAWN SHOP MANAGEMENT</value>
+  </data>
+  <data name="Quyền truy cập" xml:space="preserve">
+    <value>Access permissions</value>
+  </data>
+  <data name="Quản lý hợp đồng" xml:space="preserve">
+    <value>Contract management</value>
+  </data>
+  <data name="Quản lý rõ ràng. Vận hành hiệu quả." xml:space="preserve">
+    <value>Clear records. Efficient operations.</value>
+  </data>
+  <data name="Quản lý thông tin liên hệ và hồ sơ khách hàng." xml:space="preserve">
+    <value>Manage customer profiles and contact details.</value>
+  </data>
+  <data name="Quản trị viên" xml:space="preserve">
+    <value>Administrator</value>
+  </data>
+  <data name="Rõ ràng từ từng giao dịch" xml:space="preserve">
+    <value>Clarity in every transaction</value>
+  </data>
+  <data name="Sau →" xml:space="preserve">
+    <value>Next →</value>
+  </data>
+  <data name="Số khách hàng" xml:space="preserve">
+    <value>{0} customers</value>
+  </data>
+  <data name="Số tiền vay" xml:space="preserve">
+    <value>Loan principal</value>
+  </data>
+  <data name="Số tiền vay (VNĐ)" xml:space="preserve">
+    <value>Loan principal (VND)</value>
+  </data>
+  <data name="Số tiền vay từ 500.000 đến 1.000.000.000 đồng" xml:space="preserve">
+    <value>The loan must be between VND 500,000 and 1,000,000,000</value>
+  </data>
+  <data name="Số tiền vay × lãi suất / 100. Chỉ là ước tính, chưa bao gồm phí hoặc điều chỉnh theo thỏa thuận." xml:space="preserve">
+    <value>Principal × monthly rate / 100. Estimate only, excluding fees and contractual adjustments.</value>
+  </data>
+  <data name="Số điện thoại" xml:space="preserve">
+    <value>Phone number</value>
+  </data>
+  <data name="Số điện thoại gồm 10 chữ số, bắt đầu bằng 0" xml:space="preserve">
+    <value>The phone number must contain 10 digits and begin with 0</value>
+  </data>
+  <data name="Sử dụng tài khoản được quản trị viên cấp." xml:space="preserve">
+    <value>Use the account provided by your administrator.</value>
+  </data>
+  <data name="Sửa" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="TIỀN LÃI DỰ KIẾN / THÁNG" xml:space="preserve">
+    <value>ESTIMATED MONTHLY INTEREST</value>
+  </data>
+  <data name="Thao tác" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="The field {0} must be a string with a maximum length of {1}." xml:space="preserve">
+    <value>The field {0} must be a string with a maximum length of {1}.</value>
+  </data>
+  <data name="The {0} field is required." xml:space="preserve">
+    <value>The {0} field is required.</value>
+  </data>
+  <data name="Theo dõi khách hàng và hợp đồng trong một không gian." xml:space="preserve">
+    <value>Manage customers and contracts in one workspace.</value>
+  </data>
+  <data name="Theo dõi tài sản, khoản vay và trạng thái hợp đồng của bạn." xml:space="preserve">
+    <value>Track assets, loans and contract status.</value>
+  </data>
+  <data name="Thiết lập hệ thống" xml:space="preserve">
+    <value>Set up the system</value>
+  </data>
+  <data name="Thiết lập quản trị viên" xml:space="preserve">
+    <value>Administrator setup</value>
+  </data>
+  <data name="Thêm khách hàng" xml:space="preserve">
+    <value>Add customer</value>
+  </data>
+  <data name="Thêm khách hàng để bắt đầu lập hợp đồng." xml:space="preserve">
+    <value>Add a customer to create a contract.</value>
+  </data>
+  <data name="Thêm nhân viên" xml:space="preserve">
+    <value>Add staff</value>
+  </data>
+  <data name="Thông tin khoản vay" xml:space="preserve">
+    <value>Loan details</value>
+  </data>
+  <data name="Thông tin khách hàng được dùng để đối chiếu hợp đồng." xml:space="preserve">
+    <value>Customer information is used to verify contract details.</value>
+  </data>
+  <data name="Thông tin rõ ràng," xml:space="preserve">
+    <value>Clear records,</value>
+  </data>
+  <data name="Thông tin được lưu" xml:space="preserve">
+    <value>Stored information</value>
+  </data>
+  <data name="Thử lại sau 5 phút." xml:space="preserve">
+    <value>Try again in 5 minutes.</value>
+  </data>
+  <data name="Thử thay đổi bộ lọc hoặc tạo hợp đồng đầu tiên." xml:space="preserve">
+    <value>Change the filters or create your first contract.</value>
+  </data>
+  <data name="Trang hiện tại" xml:space="preserve">
+    <value>Page {0} / {1}</value>
+  </data>
+  <data name="Truy cập đúng vai trò, sử dụng đúng mục đích." xml:space="preserve">
+    <value>Access according to your role and use information for its intended purpose.</value>
+  </data>
+  <data name="Trạng thái" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Trạng thái không hợp lệ" xml:space="preserve">
+    <value>Invalid status</value>
+  </data>
+  <data name="Trọn sự an tâm." xml:space="preserve">
+    <value>Greater confidence.</value>
+  </data>
+  <data name="Tài khoản tạm khóa. Vui lòng thử lại sau 5 phút." xml:space="preserve">
+    <value>This account is temporarily locked. Try again in 5 minutes.</value>
+  </data>
+  <data name="Tên tài sản" xml:space="preserve">
+    <value>Asset name</value>
+  </data>
+  <data name="Tên đăng nhập" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="Tên đăng nhập gồm 3–50 ký tự chữ, số, dấu chấm, gạch ngang hoặc gạch dưới" xml:space="preserve">
+    <value>Use 3–50 letters, digits, periods, hyphens or underscores</value>
+  </data>
+  <data name="Tên đăng nhập hoặc mật khẩu không đúng." xml:space="preserve">
+    <value>Incorrect username or password.</value>
+  </data>
+  <data name="Tên đăng nhập đã tồn tại." xml:space="preserve">
+    <value>This username already exists.</value>
+  </data>
+  <data name="Tìm hợp đồng" xml:space="preserve">
+    <value>Search contracts</value>
+  </data>
+  <data name="Tìm khách hàng" xml:space="preserve">
+    <value>Search customers</value>
+  </data>
+  <data name="Tìm kiếm" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Tìm kiếm và quản lý thông tin giao dịch" xml:space="preserve">
+    <value>Search and manage transaction records</value>
+  </data>
+  <data name="Tìm tên khách hàng, tài sản…" xml:space="preserve">
+    <value>Search customer or asset…</value>
+  </data>
+  <data name="Tìm tên, số điện thoại, CCCD…" xml:space="preserve">
+    <value>Search name, phone or identity number…</value>
+  </data>
+  <data name="Tình trạng, biển số, số khung hoặc IMEI…" xml:space="preserve">
+    <value>Condition, registration plate, chassis number or IMEI…</value>
+  </data>
+  <data name="Tạo hợp đồng" xml:space="preserve">
+    <value>New contract</value>
+  </data>
+  <data name="Tạo nhân viên" xml:space="preserve">
+    <value>Create staff account</value>
+  </data>
+  <data name="Tạo quản trị viên" xml:space="preserve">
+    <value>Create administrator</value>
+  </data>
+  <data name="Tạo tài khoản đầu tiên cho cửa hàng của bạn." xml:space="preserve">
+    <value>Create the first account for your shop.</value>
+  </data>
+  <data name="Tất cả trạng thái" xml:space="preserve">
+    <value>All statuses</value>
+  </data>
+  <data name="TỔNG QUAN HOẠT ĐỘNG" xml:space="preserve">
+    <value>BUSINESS OVERVIEW</value>
+  </data>
+  <data name="Tổng vốn trong các hợp đồng đang cầm" xml:space="preserve">
+    <value>Principal in active pawn contracts</value>
+  </data>
+  <data name="Vui lòng chọn khách hàng" xml:space="preserve">
+    <value>Please select a customer</value>
+  </data>
+  <data name="Vui lòng nhập CCCD" xml:space="preserve">
+    <value>Please enter an identity number</value>
+  </data>
+  <data name="Vui lòng nhập họ tên" xml:space="preserve">
+    <value>Please enter a full name</value>
+  </data>
+  <data name="Vui lòng nhập số hợp lệ." xml:space="preserve">
+    <value>Please enter a valid number.</value>
+  </data>
+  <data name="Vui lòng nhập tên tài sản" xml:space="preserve">
+    <value>Please enter an asset name</value>
+  </data>
+  <data name="Ví dụ: Honda SH 125i" xml:space="preserve">
+    <value>Example: Honda SH 125i</value>
+  </data>
+  <data name="Vận hành đơn giản hơn" xml:space="preserve">
+    <value>Simplify daily operations</value>
+  </data>
+  <data name="Về danh sách hợp đồng" xml:space="preserve">
+    <value>Back to contracts</value>
+  </data>
+  <data name="Về trang quản lý" xml:space="preserve">
+    <value>Back to workspace</value>
+  </data>
+  <data name="Xóa" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Xóa hợp đồng này? Thao tác này không thể hoàn tác." xml:space="preserve">
+    <value>Delete this contract? This cannot be undone.</value>
+  </data>
+  <data name="Xóa khách hàng này?" xml:space="preserve">
+    <value>Delete this customer?</value>
+  </data>
+  <data name="giao dịch an tâm." xml:space="preserve">
+    <value>confident transactions.</value>
+  </data>
+  <data name="Đang cầm" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="Đang theo dõi tài sản" xml:space="preserve">
+    <value>Assets currently held</value>
+  </data>
+  <data name="Điều hướng chính" xml:space="preserve">
+    <value>Main navigation</value>
+  </data>
+  <data name="Điện thoại" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="Đã chuộc" xml:space="preserve">
+    <value>Redeemed</value>
+  </data>
+  <data name="Đã cập nhật hợp đồng." xml:space="preserve">
+    <value>Contract updated.</value>
+  </data>
+  <data name="Đã cập nhật khách hàng." xml:space="preserve">
+    <value>Customer updated.</value>
+  </data>
+  <data name="Đã thanh lý" xml:space="preserve">
+    <value>Liquidated</value>
+  </data>
+  <data name="Đã thêm khách hàng." xml:space="preserve">
+    <value>Customer added.</value>
+  </data>
+  <data name="Đã tạo hợp đồng thành công." xml:space="preserve">
+    <value>Contract created successfully.</value>
+  </data>
+  <data name="Đã tạo quản trị viên. Hãy đăng nhập." xml:space="preserve">
+    <value>Administrator created. Please sign in.</value>
+  </data>
+  <data name="Đã tạo tài khoản nhân viên." xml:space="preserve">
+    <value>Staff account created.</value>
+  </data>
+  <data name="Đã xóa hợp đồng." xml:space="preserve">
+    <value>Contract deleted.</value>
+  </data>
+  <data name="Đã xóa khách hàng." xml:space="preserve">
+    <value>Customer deleted.</value>
+  </data>
+  <data name="Đăng nhập" xml:space="preserve">
+    <value>Sign in</value>
+  </data>
+  <data name="Đăng xuất" xml:space="preserve">
+    <value>Sign out</value>
+  </data>
+  <data name="Đặt lại" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="Đến nội dung chính" xml:space="preserve">
+    <value>Skip to main content</value>
+  </data>
+  <data name="Địa chỉ" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="được kết nối trong cùng một hệ thống." xml:space="preserve">
+    <value>connected in one system.</value>
+  </data>
+  <data name="← Danh sách hợp đồng" xml:space="preserve">
+    <value>← All contracts</value>
+  </data>
+  <data name="← Danh sách khách hàng" xml:space="preserve">
+    <value>← All customers</value>
+  </data>
+  <data name="← Trước" xml:space="preserve">
+    <value>← Previous</value>
+  </data>
+  <data name="✓ Lưu hợp đồng" xml:space="preserve">
+    <value>✓ Save contract</value>
+  </data>
+  <data name="✓ Lưu khách hàng" xml:space="preserve">
+    <value>✓ Save customer</value>
+  </data>
+  <data name="＋ Thêm khách hàng" xml:space="preserve">
+    <value>＋ Add customer</value>
+  </data>
+  <data name="＋ Tạo hợp đồng" xml:space="preserve">
+    <value>＋ New contract</value>
+  </data>
+  <data name="Vui lòng nhập thời hạn cầm" xml:space="preserve">
+    <value>Please enter the pawn term</value>
+  </data>
+  <data name="Thời hạn cầm phải từ 1 đến 3650 ngày" xml:space="preserve">
+    <value>The pawn term must be between 1 and 3650 days</value>
+  </data>
+  <data name="Thời hạn cầm (ngày)" xml:space="preserve">
+    <value>Pawn term (days)</value>
+  </data>
+  <data name="Hợp đồng mới mặc định 30 ngày; có thể thay đổi." xml:space="preserve">
+    <value>New contracts default to 30 days; you can change this.</value>
+  </data>
+  <data name="Ngày đến hạn" xml:space="preserve">
+    <value>Due date</value>
+  </data>
+  <data name="Chưa xác định" xml:space="preserve">
+    <value>Not specified</value>
+  </data>
+  <data name="Ngày đến hạn = ngày cầm + thời hạn. Cảnh báo trước 3 ngày." xml:space="preserve">
+    <value>Due date = pawn date + term. Warnings start 3 days before the due date.</value>
+  </data>
+  <data name="Hạn hợp đồng" xml:space="preserve">
+    <value>Contract deadline</value>
+  </data>
+  <data name="Tất cả hạn" xml:space="preserve">
+    <value>All deadlines</value>
+  </data>
+  <data name="Quá hạn" xml:space="preserve">
+    <value>Overdue</value>
+  </data>
+  <data name="Đến hạn hôm nay" xml:space="preserve">
+    <value>Due today</value>
+  </data>
+  <data name="Sắp đến hạn" xml:space="preserve">
+    <value>Due soon</value>
+  </data>
+  <data name="Cảnh báo hạn" xml:space="preserve">
+    <value>Deadline alerts</value>
+  </data>
+  <data name="Chỉ cảnh báo hợp đồng đang cầm; sắp đến hạn trong 3 ngày tới." xml:space="preserve">
+    <value>Only active contracts are flagged; due soon means the next 3 days.</value>
+  </data>
+  <data name="Thời hạn / đến hạn" xml:space="preserve">
+    <value>Term / due date</value>
+  </data>
+  <data name="Số ngày cầm" xml:space="preserve">
+    <value>{0} days</value>
+  </data>
+  <data name="Chưa nhập thời hạn" xml:space="preserve">
+    <value>Pawn term not specified</value>
+  </data>
+  <data name="Quá hạn số ngày" xml:space="preserve">
+    <value>Overdue by {0} days</value>
+  </data>
+  <data name="Còn số ngày" xml:space="preserve">
+    <value>{0} days remaining</value>
+  </data>
+  <data name="Cần bổ sung thời hạn để cảnh báo." xml:space="preserve">
+    <value>Enter a term to enable deadline alerts.</value>
+  </data>
+</root>

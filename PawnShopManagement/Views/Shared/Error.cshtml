@@ -1,0 +1,3 @@
+@model ErrorViewModel
+@{ ViewData["Title"]=T("Có lỗi xảy ra"); }
+<section class="panel empty-state"><h1>@T("Không thể xử lý yêu cầu")</h1><p>@T("Hãy thử lại hoặc kiểm tra kết nối cơ sở dữ liệu.")</p><p>@T("Mã tra cứu") @Model.RequestId</p><a asp-controller="Contracts" asp-action="Index" class="btn btn-primary">@T("Về trang quản lý")</a></section>

@@ -1,0 +1,8 @@
+@model Customer
+@{var edit=Model.CustomerID>0; ViewData["Title"]=edit?T("Chỉnh sửa khách hàng"):T("Thêm khách hàng");}
+<a asp-action="Index" class="back-link">@T("← Danh sách khách hàng")</a><div class="page-heading"><div><div class="eyebrow">@T("HỒ SƠ KHÁCH HÀNG")</div><h1>@ViewData["Title"]</h1><p>@T("Thông tin khách hàng được dùng để đối chiếu hợp đồng.")</p></div></div>
+<section class="panel form-panel narrow"><form asp-action="@(edit?"Edit":"Create")" asp-route-id="@(edit?Model.CustomerID:(int?)null)" method="post"><input asp-for="CustomerID" type="hidden"/><div asp-validation-summary="All" class="text-danger"></div>
+<div class="field"><label asp-for="FullName"></label><input asp-for="FullName" class="form-control"/><span asp-validation-for="FullName"></span></div>
+<div class="field-grid"><div class="field"><label asp-for="IdentityCard"></label><input asp-for="IdentityCard" class="form-control" inputmode="numeric"/><span asp-validation-for="IdentityCard"></span></div><div class="field"><label asp-for="Phone"></label><input asp-for="Phone" class="form-control" type="tel"/><span asp-validation-for="Phone"></span></div></div>
+<div class="field"><label asp-for="Address"></label><textarea asp-for="Address" class="form-control" rows="3"></textarea><span asp-validation-for="Address"></span></div><div class="form-footer"><a asp-action="Index" class="btn btn-light">@T("Hủy bỏ")</a><button class="btn btn-primary">@T("✓ Lưu khách hàng")</button></div></form></section>
+@section Scripts {<partial name="_ValidationScriptsPartial"/>}

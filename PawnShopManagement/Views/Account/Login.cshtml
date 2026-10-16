@@ -1,0 +1,9 @@
+@model LoginModel
+@{ var action=ViewContext.RouteData.Values["action"]?.ToString(); var setup=action=="Setup"; var staff=action=="CreateStaff"; ViewData["Title"]=setup?T("Thiết lập quản trị viên"):staff?T("Thêm nhân viên"):T("Đăng nhập"); }
+<div class="auth-wrap"><div class="auth-intro"><div class="eyebrow">@T("CHÀO MỪNG ĐẾN PAWNFLOW")</div><h1>@T("Gọn việc quản lý.")<br/>@T("Trọn sự an tâm.")</h1><p>@T("Mọi hợp đồng, tài sản và khách hàng")<br/>@T("được kết nối trong cùng một hệ thống.")</p><div class="auth-art"><span>▤</span><div>@T("Không gian vận hành")<strong>@T("Rõ ràng từ từng giao dịch")</strong></div><span class="art-check">✓</span></div></div>
+<section class="panel form-panel auth-card"><h2>@ViewData["Title"]</h2><p class="muted">@(setup?T("Tạo tài khoản đầu tiên cho cửa hàng của bạn."):staff?T("Nhân viên được quản lý khách hàng và hợp đồng."):T("Sử dụng tài khoản được quản trị viên cấp."))</p>
+<form asp-action="@action" asp-route-returnUrl="@Context.Request.Query["ReturnUrl"]" method="post"><div asp-validation-summary="All" class="text-danger"></div><div class="field"><label asp-for="UserName"></label><input asp-for="UserName" autocomplete="username" class="form-control"/><span asp-validation-for="UserName"></span></div><div class="field"><label asp-for="Password"></label><input asp-for="Password" autocomplete="@(setup||staff?"new-password":"current-password")" class="form-control"/><span asp-validation-for="Password"></span></div>
+@if(!setup&&!staff) {<label class="remember"><input asp-for="RememberMe"/> @T("Ghi nhớ đăng nhập")</label>}
+<button class="btn btn-primary w-100" type="submit">@(setup?T("Tạo quản trị viên"):staff?T("Tạo nhân viên"):T("Đăng nhập")) →</button></form>
+@if(!setup&&!staff) {<p class="auth-foot">@T("Lần đầu cài đặt?") <a asp-action="Setup">@T("Thiết lập hệ thống")</a></p>}
+</section></div>
