@@ -8,7 +8,11 @@ using PawnShopManagement.Models;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddLocalization();
 builder.Services.AddControllersWithViews(o => { o.Filters.Add(new AutoValidateAntiforgeryTokenAttribute()); o.ModelBinderProviders.Insert(0,new InvariantNumberBinderProvider()); }).AddDataAnnotationsLocalization(o => o.DataAnnotationLocalizerProvider = (_, factory) => factory.Create(typeof(PawnShopManagement.Resources.UiResources)));
-builder.Services.AddDbContext<ApplicationDbContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+var configuredConnection = builder.Configuration.GetConnectionString("DefaultConnection");
+var connectionString = DatabaseConfiguration.ResolveConnectionString(configuredConnection, builder.Environment.IsDevelopment());
+if (string.IsNullOrWhiteSpace(configuredConnection))
+    Console.WriteLine("DefaultConnection is missing. Development mode is using local SQL Server LocalDB (PawnShopDB). Add appsettings.json next to the project file to configure it explicitly.");
+builder.Services.AddDbContext<ApplicationDbContext>(o => o.UseSqlServer(connectionString));
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(o => {
     o.LoginPath = "/Account/Login"; o.AccessDeniedPath = "/Account/Denied";
     o.Cookie.HttpOnly = true; o.Cookie.SameSite = SameSiteMode.Lax;
