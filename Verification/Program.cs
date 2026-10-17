@@ -32,6 +32,8 @@ using var factory=new WebApplicationFactory<pawn::Program>().WithWebHostBuilder(
  });
 });
 if(Environment.GetEnvironmentVariable("PAWN_BROWSER_CHECK")=="1") factory.UseKestrel();
+using var firstVisitClient = factory.CreateClient(new WebApplicationFactoryClientOptions { AllowAutoRedirect=false });
+var firstVisit = await firstVisitClient.GetAsync("/Account/Start");
 using(var scope=factory.Services.CreateScope()) {
  var db=scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
  var hasher=scope.ServiceProvider.GetRequiredService<IPasswordHasher<AppUser>>();
@@ -43,6 +45,15 @@ using(var scope=factory.Services.CreateScope()) {
 if(Environment.GetEnvironmentVariable("PAWN_BROWSER_CHECK")=="1") {Console.WriteLine("Synthetic preview ready.");await Task.Delay(Timeout.Infinite);return;}
 var messages=new List<string>();
 void Check(bool ok,string label) { messages.Add((ok?"PASS ":"FAIL ")+label);Console.WriteLine(messages[^1]);if(!ok)throw new Exception(label); }
+Check(firstVisit.StatusCode==HttpStatusCode.Redirect && firstVisit.Headers.Location?.OriginalString=="/Account/Setup","Fresh installation opens admin setup");
+var nextVisit = await firstVisitClient.GetAsync("/Account/Start");
+Check(nextVisit.StatusCode==HttpStatusCode.Redirect && nextVisit.Headers.Location?.OriginalString=="/Account/Login","Existing installation opens login");
+Check(await firstVisitClient.GetStringAsync("/_launcher/ready")== (Environment.GetEnvironmentVariable("PAWN_LAUNCH_ID") ?? "ready"),"Launcher readiness endpoint identifies running instance");
+Check(DatabaseConfiguration.ResolveConnectionString(null,true).Contains("(localdb)"),"Development missing connection uses LocalDB fallback");
+Check(DatabaseConfiguration.ResolveConnectionString("  ",true).Contains("PawnShopDB"),"Development blank connection uses named demo database");
+Check(DatabaseConfiguration.ResolveConnectionString("Server=custom;Database=Existing",false)=="Server=custom;Database=Existing","Explicit SQL connection is preserved");
+try { DatabaseConfiguration.ResolveConnectionString(null,false); Check(false,"Production requires explicit SQL connection"); }
+catch(InvalidOperationException){Check(true,"Production requires explicit SQL connection");}
 HttpClient Client()=>factory.CreateClient(new WebApplicationFactoryClientOptions{AllowAutoRedirect=false,BaseAddress=new Uri("https://localhost")});
 async Task<string> Token(HttpClient client,string path="/Account/Login") {var html=await client.GetStringAsync(path);var match=Regex.Match(html,"name=\"__RequestVerificationToken\"[^>]*value=\"([^\"]+)\"");if(!match.Success)throw new Exception("No CSRF token");return WebUtility.HtmlDecode(match.Groups[1].Value);}
 async Task<HttpResponseMessage> Post(HttpClient c,string path,Dictionary<string,string> fields,string tokenPath="/Account/Login") {fields["__RequestVerificationToken"]=await Token(c,tokenPath);return await c.PostAsync(path,new FormUrlEncodedContent(fields));}

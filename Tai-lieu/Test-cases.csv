@@ -1,0 +1,64 @@
+﻿Mã,Mục tiêu,Đầu vào và ràng buộc,Đầu ra kỳ vọng,Đầu ra thực tế,Kết quả,Môi trường,Sửa lỗi hoặc ghi chú
+TC01,English sign-in labels localized,GET Login?culture=en-US&ui-culture=en-US,"HTML có Username, Password, Remember me","HTML có Username, Password, Remember me",PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC02,Anonymous MVC redirects to login,GET /Contracts không cookie,302 redirect,302 redirect,PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC03,Anonymous API returns 401,GET /api/contracts không cookie,401,401,PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC04,CSRF rejects POST without token,POST Login không token,400,400,PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC05,CSS served,GET /css/site.css,200,200,PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC06,Login staff,"POST Login, staff, mật khẩu kiểm thử hợp lệ, CSRF hợp lệ",302,302,PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC07,English contract list localized,GET Contracts với en-US,"HTML có Outstanding principal, Loan principal, Apply filters","HTML có Outstanding principal, Loan principal, Apply filters",PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC08,English model display labels localized,GET Contracts/Create với en-US,"HTML có Asset name, Interest rate","HTML có Asset name, Interest rate",PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC09,Staff cannot create staff accounts,Staff GET Account/CreateStaff,302 đến trang từ chối,302 đến trang từ chối,PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC10,Contract view renders seeded records,GET Contracts với 12 hợp đồng fixture,HTML chứa tài sản kiểm thử,HTML chứa tài sản kiểm thử,PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC11,API filters and clamps paging,"GET API, status=DangCam, page=999; fixture 10 DangCam",total=10; page=1; 10 items,total=10; page=1; 10 items,PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC12,API second page contains two records,GET API?page=2; fixture 12 dòng,2 items,2 items,PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC13,AJAX returns result fragment,GET Contracts với X-Requested-With=XMLHttpRequest,"Có data-table, không có <html","Có data-table, không có <html",PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC14,Create customer,"POST CCCD 000000000002, phone 0900000002, tên và địa chỉ hợp lệ",302 sau lưu,302 sau lưu,PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC15,Duplicate CCCD returns form,POST lại CCCD 000000000002,200 trả form validation,200 trả form validation,PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC16,Create contract under vi-VN,"CustomerID=1, tài sản Decimal check, tiền 2500000, lãi 1.5, ngày hôm nay",302 sau lưu,302 sau lưu,PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC17,Decimal point stored correctly,Đọc hợp đồng Decimal check vừa lưu,InterestRate=1.5 và LoanAmount=2500000,InterestRate=1.5 và LoanAmount=2500000,PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC18,Edit contract,POST Edit với id đúng; Status=DaChuoc,302,302,PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC19,Staff API delete forbidden,Staff DELETE API với CSRF hợp lệ,403,403,PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC20,Invalid contract returns validation form,"CustomerID=999, tiền 1, lãi -1, ngày 2100-01-01, trạng thái Invalid",200 trả form,200 trả form,PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC21,Invalid create did not persist,Đếm hợp đồng sau lần thêm sai,Vẫn có 13 hợp đồng,Vẫn có 13 hợp đồng,PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC22,Login admin,"POST Login, admin, mật khẩu kiểm thử hợp lệ, CSRF hợp lệ",302,302,PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC23,REST POST returns 201 and Location,"Admin POST JSON API, khách 1, tiền 3000000, lãi 1.5",201 và Location có giá trị,201 và Location có giá trị,PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC24,REST PUT returns 204,"Admin PUT id trùng URL, assetName API edited, lãi 2.5",204,204,PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC25,REST DELETE returns 204,Admin DELETE id vừa tạo bằng API,204,204,PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC26,Deleted contract returns 404,GET API id vừa xóa,404,404,PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC27,Delete referenced customer redirects safely,Admin POST Customers/Delete/1 còn hợp đồng,302,302,PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC28,Referenced customer remains intact,Đọc khách 1 sau yêu cầu xóa,Khách 1 vẫn tồn tại,Khách 1 vẫn tồn tại,PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC29,Language endpoint prevents external redirect,"POST Language, en-US, returnUrl=https://example.com",Location=/,Location=/,PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC30,Logout clears authentication,POST Logout rồi GET API,401,401,PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC31,Account lockout persists across fresh sessions,"5 client cookie mới, cùng staff, mật khẩu sai",LockoutUntil lớn hơn thời gian UTC hiện tại,LockoutUntil lớn hơn thời gian UTC hiện tại,PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC32,Locked account cannot authenticate with correct password,Client mới đăng nhập staff bằng mật khẩu đúng trong thời gian khóa,Login trả 200 và GET API trả 401,Login trả 200 và GET API trả 401,PASS,WebApplicationFactory + EF Core InMemory,Assertion tự động; dữ liệu hoàn toàn giả
+TC33,Pawn term adds calendar days across leap February,StartDate=31/01/2024; TermDays=30,DueDate=01/03/2024,DueDate=01/03/2024,PASS,Logic và WebApplicationFactory + InMemory,Không xác nhận thực thi SQL Server thật
+TC34,Pawn due date crosses year boundary,StartDate=31/12/2026; TermDays=1,DueDate=01/01/2027,DueDate=01/01/2027,PASS,Logic và WebApplicationFactory + InMemory,Không xác nhận thực thi SQL Server thật
+TC35,Deadline state: Deadline overdue,Fixture Deadline overdue theo ngày Việt Nam,Overdue,Overdue,PASS,Logic và WebApplicationFactory + InMemory,Không xác nhận thực thi SQL Server thật
+TC36,Deadline state: Deadline today,Fixture Deadline today theo ngày Việt Nam,DueToday,DueToday,PASS,Logic và WebApplicationFactory + InMemory,Không xác nhận thực thi SQL Server thật
+TC37,Deadline state: Deadline tomorrow,Fixture Deadline tomorrow theo ngày Việt Nam,DueSoon,DueSoon,PASS,Logic và WebApplicationFactory + InMemory,Không xác nhận thực thi SQL Server thật
+TC38,Deadline state: Deadline three,Fixture Deadline three theo ngày Việt Nam,DueSoon,DueSoon,PASS,Logic và WebApplicationFactory + InMemory,Không xác nhận thực thi SQL Server thật
+TC39,Deadline state: Deadline four,Fixture Deadline four theo ngày Việt Nam,OnTime,OnTime,PASS,Logic và WebApplicationFactory + InMemory,Không xác nhận thực thi SQL Server thật
+TC40,Deadline state: Deadline redeemed,Fixture Deadline redeemed theo ngày Việt Nam,Closed,Closed,PASS,Logic và WebApplicationFactory + InMemory,Không xác nhận thực thi SQL Server thật
+TC41,Deadline state: Deadline liquidated,Fixture Deadline liquidated theo ngày Việt Nam,Closed,Closed,PASS,Logic và WebApplicationFactory + InMemory,Không xác nhận thực thi SQL Server thật
+TC42,Deadline state: Deadline legacy,Fixture Deadline legacy theo ngày Việt Nam,Unknown,Unknown,PASS,Logic và WebApplicationFactory + InMemory,Không xác nhận thực thi SQL Server thật
+TC43,API deadline filter Overdue,GET API?deadline=Overdue với fixture cảnh báo,total=1,total=1,PASS,Logic và WebApplicationFactory + InMemory,Không xác nhận thực thi SQL Server thật
+TC44,API deadline filter DueToday,GET API?deadline=DueToday với fixture cảnh báo,total=1,total=1,PASS,Logic và WebApplicationFactory + InMemory,Không xác nhận thực thi SQL Server thật
+TC45,API deadline filter DueSoon,GET API?deadline=DueSoon với fixture cảnh báo,total=2,total=2,PASS,Logic và WebApplicationFactory + InMemory,Không xác nhận thực thi SQL Server thật
+TC46,AJAX includes alerts and preserves deadline filter in paging links,"GET Contracts?deadlineFilter=DueSoon, header AJAX",PartialView có deadline-overview và liên kết lọc; không có <html,PartialView có deadline-overview và liên kết lọc; không có <html,PASS,Logic và WebApplicationFactory + InMemory,Không xác nhận thực thi SQL Server thật
+TC47,MVC accepts explicit 45-day pawn term,"POST Create hợp lệ, TermDays=45",302 sau lưu,302 sau lưu,PASS,Logic và WebApplicationFactory + InMemory,Không xác nhận thực thi SQL Server thật
+TC48,MVC persists pawn term and calculates due date,Đọc hợp đồng Term persistence,TermDays=45; DueDate=ngày cầm+45,TermDays=45; DueDate=ngày cầm+45,PASS,Logic và WebApplicationFactory + InMemory,Không xác nhận thực thi SQL Server thật
+TC49,MVC edits pawn term,"POST Edit, TermDays=60",302 sau cập nhật,302 sau cập nhật,PASS,Logic và WebApplicationFactory + InMemory,Không xác nhận thực thi SQL Server thật
+TC50,API exposes updated pawn term and due date,GET API của hợp đồng vừa sửa,termDays=60; dueDate=ngày cầm+60,termDays=60; dueDate=ngày cầm+60,PASS,Logic và WebApplicationFactory + InMemory,Không xác nhận thực thi SQL Server thật
+TC51,MVC rejects invalid pawn term: 0,"POST Create, TermDays='0'","200, trả form validation","200, trả form validation",PASS,Logic và WebApplicationFactory + InMemory,Không xác nhận thực thi SQL Server thật
+TC52,MVC rejects invalid pawn term: 3651,"POST Create, TermDays='3651'","200, trả form validation","200, trả form validation",PASS,Logic và WebApplicationFactory + InMemory,Không xác nhận thực thi SQL Server thật
+TC53,MVC rejects invalid pawn term: ,"POST Create, TermDays=''","200, trả form validation","200, trả form validation",PASS,Logic và WebApplicationFactory + InMemory,Không xác nhận thực thi SQL Server thật
+TC54,Invalid pawn terms do not persist,Kiểm tra sau 3 POST có thời hạn sai,Không có hợp đồng tên bắt đầu Invalid term,Không có hợp đồng tên bắt đầu Invalid term,PASS,Logic và WebApplicationFactory + InMemory,Không xác nhận thực thi SQL Server thật
+TC55,API rejects zero-day pawn term,"POST JSON API, termDays=0",400 Bad Request,400 Bad Request,PASS,Logic và WebApplicationFactory + InMemory,Không xác nhận thực thi SQL Server thật
+TC56,Deadline filter preserved on actual next-page link,11 hợp đồng DueSoon; đọc liên kết trang tiếp,Link có page=2 và deadlineFilter=DueSoon,Link có page=2 và deadlineFilter=DueSoon,PASS,Logic và WebApplicationFactory + InMemory,Không xác nhận thực thi SQL Server thật
+TC57,Deadline filter works on page two,"GET API?deadline=DueSoon&page=2, 11 dòng phù hợp","total=11, items có 1 dòng","total=11, items có 1 dòng",PASS,Logic và WebApplicationFactory + InMemory,Không xác nhận thực thi SQL Server thật
+TC58,SQL Server translates deadline filter: Overdue,ToQueryString với SQL Server provider; không mở kết nối,SQL sinh ra có DATEADD,SQL sinh ra có DATEADD,PASS,"SQL Server provider, chỉ dịch truy vấn",Không xác nhận thực thi SQL Server thật
+TC59,SQL Server translates deadline filter: DueToday,ToQueryString với SQL Server provider; không mở kết nối,SQL sinh ra có DATEADD,SQL sinh ra có DATEADD,PASS,"SQL Server provider, chỉ dịch truy vấn",Không xác nhận thực thi SQL Server thật
+TC60,SQL Server translates deadline filter: DueSoon,ToQueryString với SQL Server provider; không mở kết nối,SQL sinh ra có DATEADD,SQL sinh ra có DATEADD,PASS,"SQL Server provider, chỉ dịch truy vấn",Không xác nhận thực thi SQL Server thật
+TC61,SQL UNIQUE,Chèn CCCD trùng,SQL từ chối,Chưa xác minh,Chưa xác minh,SQL Server,Chạy Kiem-tra-SQL.cmd dưới tài khoản có quyền LocalDB
+TC62,SQL FOREIGN KEY,Chèn CustomerID không tồn tại,SQL từ chối,Chưa xác minh,Chưa xác minh,SQL Server,Chạy Kiem-tra-SQL.cmd dưới tài khoản có quyền LocalDB
+TC63,SQL CHECK,Chèn khoản vay 1 đồng,SQL từ chối,Chưa xác minh,Chưa xác minh,SQL Server,Chạy Kiem-tra-SQL.cmd dưới tài khoản có quyền LocalDB

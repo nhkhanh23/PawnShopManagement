@@ -34,7 +34,7 @@ app.Use(async (context, next) => {
     context.Response.Headers["Referrer-Policy"]="same-origin";
     await next();
 });
-app.UseHttpsRedirection();
+if (!app.Environment.IsDevelopment()) app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 var cultures = new[] { new CultureInfo("vi-VN"), new CultureInfo("en-US") };
@@ -42,6 +42,8 @@ app.UseRequestLocalization(new RequestLocalizationOptions { DefaultRequestCultur
 app.UseSession(); app.UseAuthentication(); app.UseAuthorization();
 app.MapControllerRoute("default", "{controller=Contracts}/{action=Index}/{id?}");
 app.MapControllers();
+if (app.Environment.IsDevelopment())
+    app.MapGet("/_launcher/ready", () => Results.Text(app.Configuration["PAWN_LAUNCH_ID"] ?? "ready"));
 var initialize = args.Contains("--init-db") || (app.Environment.IsDevelopment() && app.Configuration.GetValue<bool>("Database:InitializeOnStartup"));
 if (initialize) {
     try {

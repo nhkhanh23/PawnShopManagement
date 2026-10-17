@@ -1,3 +1,5 @@
+> Cập nhật bản RUN-03: hướng dẫn khởi động và cấu hình hiện hành nằm trong [README.md](README.md). Kết quả mới nhất: 67 kiểm tra ứng dụng và 10 kiểm tra launcher; SQL thật chưa xác nhận trong môi trường đóng gói.
+
 # PawnFlow — Hướng dẫn chạy và đối chiếu web.docx
 
 Cập nhật ngày 16/10/2026. Dự án ASP.NET Core MVC trên .NET 10, SQL Server, Entity Framework Core. Tên assembly và thư mục dự án vẫn là PawnShopManagement; PawnFlow là tên giao diện.

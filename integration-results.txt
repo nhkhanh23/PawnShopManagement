@@ -1,3 +1,10 @@
+PASS Fresh installation opens admin setup
+PASS Existing installation opens login
+PASS Launcher readiness endpoint identifies running instance
+PASS Development missing connection uses LocalDB fallback
+PASS Development blank connection uses named demo database
+PASS Explicit SQL connection is preserved
+PASS Production requires explicit SQL connection
 PASS English sign-in labels localized
 PASS Anonymous MVC redirects to login
 PASS Anonymous API returns 401

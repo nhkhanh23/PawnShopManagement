@@ -10,6 +10,10 @@ using PawnShopManagement.Data;
 using PawnShopManagement.Models;
 namespace PawnShopManagement.Controllers;
 public class AccountController(ApplicationDbContext db, IPasswordHasher<AppUser> hasher, IWebHostEnvironment env) : Controller {
+    [HttpGet] public async Task<IActionResult> Start() {
+        if (env.IsDevelopment() && !await db.AppUsers.AnyAsync()) return RedirectToAction(nameof(Setup));
+        return RedirectToAction(nameof(Login));
+    }
     [HttpGet] public IActionResult Login() => View(new LoginModel());
     [HttpPost] public async Task<IActionResult> Login(LoginModel input, string? returnUrl) {
         if(!ModelState.IsValid) return View(input);
